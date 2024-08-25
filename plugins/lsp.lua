@@ -6,6 +6,7 @@ return {
     dependencies = {
         "williamboman/mason.nvim",
         "williamboman/mason-lspconfig.nvim",
+        "folke/lazydev.nvim",
     },
 
     config = function ()

@@ -3,7 +3,7 @@ return {
     branch = "0.1.x",
     dependencies = { "nvim-lua/plenary.nvim" },
 
-    -- event = {"BufReadPre", "BufNewFile"},
+    event = { "VimEnter" },
 
     keys = {
         { "<leader>ff", "<CMD>lua require('telescope.builtin').find_files()<CR>" },
@@ -13,10 +13,5 @@ return {
     
     config = function ()
         require("telescope")
-
-        -- set keymaps
-        -- vim.keymap.set("n", "<leader>ff", ":Telescope find_files<CR>")
-        -- vim.keymap.set("n", "<leader>fr", ":Telescope oldfiles<CR>")
-        -- vim.keymap.set("n", "<leader>fs", ":Telescope live_grep<CR>")
     end
 }
