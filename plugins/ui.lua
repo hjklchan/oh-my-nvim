@@ -14,4 +14,19 @@ return {
         ---@type ibl.config
         opts = {},
     },
+    {
+        "utilyre/barbecue.nvim",
+        event = {"BufReadPre", "BufNewFile"},
+        name = "barbecue",
+        version = "*",
+        dependencies = {
+            "SmiteshP/nvim-navic",
+            "nvim-tree/nvim-web-devicons", -- optional
+        },
+        config = function ()
+            require("barbecue").setup({
+                theme = "github_dark_default"
+            })
+        end
+    }
 }

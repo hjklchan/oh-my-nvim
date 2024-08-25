@@ -3,6 +3,9 @@ return {
     dependencies = { 'nvim-tree/nvim-web-devicons' },
     config = function ()
         require("lualine").setup {
+            options = {
+                theme = "github_dark_default"
+            }
         }
     end
 }
