@@ -33,3 +33,7 @@ opt.clipboard:append("unnamedplus")
 opt.termguicolors = true
 opt.signcolumn = "yes"
 
+vim.diagnostic.config({
+    virtual_text = true,
+    signs = true,
+})
