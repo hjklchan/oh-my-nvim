@@ -20,6 +20,7 @@ return {
             taplo = {},
             sqlls = {},
             cssls = {},
+            eslint = {},
         }
 
         local on_attach = function (_, bufnr)
